@@ -1,0 +1,18 @@
+<div class="container boxes">
+<div class="row">
+  <div class="col-sm-12" >
+  <% colors.forEach((oneColor) => { %>
+    <div class="col-sm-3 box" style=" background-color: <%= oneColor.hex %> ">
+      <div class="box2">
+        <p class="name"><strong>Name</strong>:
+          <%= oneColor.keyword %>
+        </p>
+        <p class="name"><strong>Hex</strong>:
+        <%= oneColor.hex %>
+        </p>
+      </div>
+</div>
+  <% }) %>
+</div>
+</div>
+</div>

@@ -1,0 +1,24 @@
+
+<div class="container">
+<div class="row">
+  <div class="col-sm-12" >
+  <% category.forEach((oneColor) => { %>
+
+<%    if (oneColor.category !== "purple") {  %>
+  <%    return;   %>
+  <%  } %>
+
+    <div class="col-sm-4 box" style=" background-color: <%= oneColor.hex %> ">
+      <div class="box2">
+        <p>Name:
+          <%= oneColor.keyword %>
+        </p>
+        <p>Hex:
+        <%= oneColor.hex %>
+        </p>
+      </div>
+</div>
+  <% }) %>
+</div>
+</div>
+</div>
